@@ -1,0 +1,4 @@
+PATH=$PATH:/usr/local/pgsql/bin:/usr/local/mysql/bin
+export PATH
+JAVA=`/usr/libexec/java_home`
+export JAVA_HOME=$JAVA
