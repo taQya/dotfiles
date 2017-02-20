@@ -2,3 +2,5 @@ PATH=$PATH:/usr/local/pgsql/bin:/usr/local/mysql/bin
 export PATH
 JAVA=`/usr/libexec/java_home`
 export JAVA_HOME=$JAVA
+export PYTHONPATH=${PYTHONPATH}:/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages
+

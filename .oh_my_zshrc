@@ -1,13 +1,12 @@
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
+export MAVEN_OPTS='-Xms256m -Xmx8192m -XX:MaxPermSize=2048m'     
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="gianu"
-ZSH_THEME="muse"
-#ZSH_THEME="candy-kingdom"
+ZSH_THEME="gianu"
 
 # Uncomment the following line to use case-sensitive completion.
 #CASE_SENSITIVE="true"
@@ -51,7 +50,7 @@ ZSH_THEME="muse"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew battery osx bundler emoji-clock)
+plugins=(git brew)
 
 # User configuration
 
@@ -85,4 +84,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-fpath=(/usr/local/share/zsh-completions $fpath)
+tmux new-session \; source-file ~/dotfiles/.tmux.conf.window
+
