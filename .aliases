@@ -1,5 +1,3 @@
-alias vi="/usr/local/bin/vim"
-
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
@@ -15,9 +13,10 @@ alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
 alias g="git"
 alias h="history"
-alias vi="/usr/local/Cellar/vim/7.4.922/bin/vim"
-alias vim="/usr/local/Cellar/vim/7.4.922/bin/vim"
 alias starttmux="tmux new-session \; source-file ~/dotfiles/.tmux.conf.window"
+
+alias gf="git fetch upstream "
+alias gp="git pull upstream "
 
 # Detect which `ls` flavor is in use
 #if ls --color > /dev/null 2>&1; then # GNU `ls`

@@ -1,6 +1,12 @@
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
-export MAVEN_OPTS='-Xms256m -Xmx8192m -XX:MaxPermSize=2048m'     
+
+# forward "/usr/local/bin" for brew install vim
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt:/usr/local/git/bin"
+
+# for Node.js overwrite PATH
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -54,9 +60,6 @@ plugins=(git brew)
 
 # User configuration
 
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"
-# export MANPATH="/usr/local/man:$MANPATH"
-
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -84,5 +87,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-tmux new-session \; source-file ~/dotfiles/.tmux.conf.window
+# auto load tmux new session
+#tmux new-session \; source-file ~/dotfiles/.tmux.conf.window
 
