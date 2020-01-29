@@ -14,9 +14,19 @@ alias p="cd ~/projects"
 alias g="git"
 alias h="history"
 alias starttmux="tmux new-session \; source-file ~/dotfiles/.tmux.conf.window"
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
-alias gf="git fetch upstream "
-alias gp="git pull upstream "
+
+# goodby python2
+#alias python="python3"
+#alias python2="python2.7"
+
+# tmux option shortcuts
+alias syncon="tmux set-window-option synchronize-panes on"
+alias syncoff="tmux set-window-option synchronize-panes off"
+
+# where is alias...
+#unalias gb
 
 # Detect which `ls` flavor is in use
 #if ls --color > /dev/null 2>&1; then # GNU `ls`

@@ -1,8 +1,4 @@
 syntax enable
-set background=dark
-colorscheme solarized
-let g:solarized_termcolors=256
-
 "---------------------------------------------------------------------------
 " 編集に関する設定:
 "

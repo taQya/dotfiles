@@ -1,9 +1,10 @@
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
-
 # forward "/usr/local/bin" for brew install vim
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt:/usr/local/git/bin"
+export GOPATH="$HOME/go"
 
+export PATH="$GOPATH/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt:/usr/local/git/bin"
+export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 # for Node.js overwrite PATH
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
